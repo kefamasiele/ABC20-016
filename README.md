@@ -1,2 +1,1 @@
-#GitStuff
-This is a sample
+## Main Repository

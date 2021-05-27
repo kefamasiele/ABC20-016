@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin-left: 42%; background-color: honeydew;">
+    <form>
+        <fieldset style="width: fit-content;margin-top: 50px;">
+            <legend>Contact information</legend>
+            Username: <br>
+            <input type="text" name="username"> <br>
+            Email address: <br>
+            <input type="email" name="email address"> <br>
+            Telephone number: <br>
+            <input type="text" name="telephone number">  
+        </fieldset>
+
+        <fieldset style="width: fit-content; margin-top: 15px;">
+            <legend>Select your Area(s) of Interest</legend>
+            <p>
+                <input type="checkbox" id="job1" name="job title">
+                <label for="job1">Account Executive</label> <br>
+                <input type="checkbox" id="job2" name="job title">
+                <label for="job2">Business Development</label> <br> 
+            </p>
+            <p>
+                <input type="checkbox" id="job3" name="job title">
+                <label for="job3">Inside Sales</label> <br>
+                <input type="checkbox" id="job4" name="job title">
+                <label for="job4">Sales Manager</label> <br>
+                <input type="checkbox" id="job5" name="job title">
+                <label for="job5">VP Sales</label> <br>
+            </p>
+        </fieldset>
+        
+        <fieldset style="width: fit-content; margin-top: 15px;">  
+            <legend>Type of position you desire</legend>
+            <select name="position type">
+                <option value="Part time contract">Part time contract</option>
+                <option value="Part time permanent">Part time permanent</option>
+                <option value="Full time contract">Full time contract</option>
+                <option value="Full time permanent">Full time permanent</option>
+            </select>
+        </fieldset>
+
+        <fieldset style="width: fit-content; margin-top: 15px;">
+            <legend>Are you willing to relocate?</legend>
+            <input type="radio" name="relocate" value="yes">Yes <br>
+            <input type="radio" name="relocate" value="no">No <br>
+        </fieldset>
+        
+        <br>
+
+        <div>
+            <input type="submit" value="Submit"> 
+            <input type="reset" value="Reset">
+        </div>
+        
+    </form>
+    
+</body>
+</html>

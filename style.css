@@ -118,7 +118,7 @@ article h2 {
 }
 
 article p {
-    padding: 10px;
+    width: 95%;
 }
 
 article {
@@ -651,7 +651,8 @@ article {
         font-weight: 600;
     }
     article p {
-        padding: 10px;
+        width: 80%;
+        margin: auto;
     }
     
     article {

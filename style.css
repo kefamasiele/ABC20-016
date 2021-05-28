@@ -599,44 +599,77 @@ article {
     /*nav and homepage*/
     .navbar {
         height: auto;
+        overflow: hidden;
     }
     .navbar .flex {
         flex-direction: column;
     }
     .navbar ul {
-        padding:0  ;
-        margin: 0 5px;
+        padding: 0;
+        margin: 0;
         align-items: center;
         flex-direction: column;
     }
-    .container a {
-        padding: 20px 0;
+    .container li {
+        padding: 5px 0;
     }
     .container a:hover {
         color: aqua;
         border-bottom: none;
     }
     .container {
-        padding: 15px 5px;
+        padding: 15px 0;
+    }
+    .container2 {
+        margin: auto;
+        padding-top: 45px;
+        display: flex;
+        height: 100%;
+        border-top: 40px solid #3a4146;
+        background-color: aqua;
+    }
+    .flex2 {
+        flex-direction: column;
     }
     .container2 ul {
-        padding: 0 0 0 25px;
+        margin-left: 50px;
     }
     .container2 img {
-        padding-right: 50px;
         margin: auto;
+    }
+    .mainimage {
+        max-height: 550px;
+        border-bottom: 40px solid #3a4146;
+        width: auto;
+        object-fit: cover;
+        overflow: hidden;
     }
     .mainimage h1 {
         left: 27%;
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+    }
+    article p {
+        padding: 10px;
+    }
+    
+    article {
+        width: 95%;
+        margin: auto;
+        margin: 50px 0;
+        overflow: hidden;
     }
     /*about*/
     .wrapper {
         width: 100%;
-        margin: 0 15px;
+        padding: 0 15px;
         position: relative;
+        overflow: hidden;
     }
     .sidebar {
         display: none;
+        overflow: hidden;
     }
     
     .page {
@@ -644,11 +677,13 @@ article {
         width: 100%;
         margin: 25px 0;
         grid-template-columns: none;
+        overflow: hidden;
     }
     
     .main-s {
         flex-direction: column;
-        grid-column-start: none
+        grid-column-start: none;
+        overflow: hidden;
     }
     
     .main-s img {
@@ -656,12 +691,14 @@ article {
         width: 95%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 60px;
+        overflow: hidden;
     }
+        
     /*connect*/
     .connect {
         position: relative;
         min-height: 100%;
-        padding: 50px 100px;
+        padding: 50px 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -683,7 +720,7 @@ article {
     
     .news-form {
         width: 100%;
-        padding: 40px;
+        padding: 20px;
         background: lightslategray;
     }
     
@@ -753,11 +790,23 @@ article {
 
 /*Tablets and below*/
 @media (max-width: 768px) and (min-width: 501px) {
+    .navbar {
+        overflow: hidden;
+    }
+    .mainimage {
+        overflow: hidden;
+    }
+    article {
+        overflow: hidden;
+    }
     .navbar ul {
         padding: 0 20px 0 0  ;
         margin: 0 80px 0 0;
         align-items: center;
         flex-direction: column;
+    }
+    .container li {
+        padding: 5px 0;
     }
     .container a:hover {
         color: aqua;
@@ -775,6 +824,9 @@ article {
     .container2 ul {
         padding: 0 0 0 25px;
         margin-right: 10%;
+    }
+    .mainimage h1 {
+        font-size: 40px;
     }
     /*about*/
     .wrapper {
@@ -842,6 +894,15 @@ article {
 
 /*other*/
 @media (max-width: 1100px) and (min-width: 769px) {
+    .navbar {
+        overflow: hidden;
+    }
+    .mainimage {
+        overflow: hidden;
+    }
+    article {
+        overflow: hidden;
+    }
     .container {
         padding: 15px 5px;
     }
